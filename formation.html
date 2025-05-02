@@ -8,9 +8,9 @@
       src="https://kit.fontawesome.com/2bb90c57b5.js"
       crossorigin="anonymous"
     ></script>
-    <title>John Doe - Portfolio</title>
+    <title>John Doe - Formation</title>
   </head>
-  <body id="index">
+  <body id="formation">
     <header class="container">
       <a href="/">
         <img src="img/logo.png" alt="Logo John Doe" />
@@ -18,9 +18,9 @@
       </a>
       <nav>
         <ul>
-          <li><a class="active" href="/">Accueil</a></li>
+          <li><a href="/">Accueil</a></li>
           <li><a href="/">Qui suis-je ?</a></li>
-          <li><a href="/">Ma formation</a></li>
+          <li><a href="/" class="active">Ma formation</a></li>
           <li><a href="/">Mes compétences</a></li>
           <li><a href="/">Mes Projets</a></li>
           <li><a href="/">Contactez-nous</a></li>
@@ -29,91 +29,31 @@
       <i class="fa-solid fa-bars burger"></i>
     </header>
 
-    <main class="container">
-      <section id="kisuije">
+    <main>
+      <section id="alacarte">
+        <h1>Formation à la carte</h1>
+        <p>4 mois de formation de découverte des métiers du développement</p>
+      </section>
+
+      <section id="description" class="container">
         <article>
-          <h1>John Doe - Développeur web et web mobile</h1>
+          <h2>description de la formation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            molestiae adipisci nulla saepe, ipsa earum, corrupti necessitatibus
-            libero ut nobis sed magni facere blanditiis assumenda. Enim vero
-            perspiciatis beatae animi! <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            temporibus corrupti blanditiis aliquid, quod a expedita eligendi
-            soluta libero voluptate sit, maiores consequatur minus perspiciatis
-            perferendis porro? Consectetur, laborum quo! <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            temporibus corrupti blanditiis aliquid, quod a expedita eligendi
-            soluta libero voluptate sit, maiores consequatur minus perspiciatis
-            perferendis porro? Consectetur, laborum quo! <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            temporibus corrupti blanditiis aliquid, quod a expedita eligendi
-            soluta libero voluptate sit, maiores consequatur minus perspiciatis
-            perferendis porro? Consectetur, laborum quo!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+            obcaecati recusandae id, quae beatae est a neque laborum ullam
+            pariatur excepturi? Voluptatum consectetur laborum a maxime facilis
+            doloribus, aut id. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Necessitatibus, commodi fuga impedit, vel ducimus
+            quaerat dolor repellendus, perspiciatis tenetur tempore esse?
+            Similique, consequuntur illo! Quibusdam quasi recusandae commodi
+            consectetur dolor.
           </p>
-          <button type="button">Contactez-moi</button>
         </article>
-        <img src="img/moi.png" alt="John Doe" />
+        <img src="img/dev-a-la-carte.png" alt="Formation à la carte" />
       </section>
 
-      <section id="formation">
-        <h2>Ma formation</h2>
-        <div id="formation-container">
-          <article id="article1">
-            <img src="img/dev-a-la-carte.png" alt="Dev a la carte" />
-            <div>
-              <div class="background">
-                <h3>Formation développement à la carte</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur
-                  <br /><br />adipisicing elit. Reiciendis sint quam quo eveniet
-                  placeat distinctio recusandae nihil praesentium fugiat natus,
-                  ducimus assumenda! Blanditiis, fugit laboriosam? Libero sunt
-                  explicabo facilis laboriosam? <br />
-                  Lorem ipsum, dolor sit amet consectetur
-                  <br /><br />adipisicing elit. Recusandae cum nihil placeat
-                  cupiditate tempore vel, labore eos tenetur qui provident
-                  blanditiis commodi magni animi at dicta dolore! Tempora, magni
-                  consequatur?
-                </p>
-              </div>
-              <div>
-                <a href="/">En savoir plus</a>
-              </div>
-            </div>
-          </article>
-
-          <article id="article2">
-            <div>
-              <div class="background">
-                <h3>Formation développeur web et Web mobile</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur
-                  <br /><br />adipisicing elit. Reiciendis sint quam quo eveniet
-                  placeat distinctio recusandae nihil praesentium fugiat natus,
-                  ducimus assumenda! Blanditiis, fugit laboriosam? Libero sunt
-                  explicabo facilis laboriosam? <br />
-                  Lorem ipsum, dolor sit amet consectetur
-                  <br /><br />adipisicing elit. Recusandae cum nihil placeat
-                  cupiditate tempore vel, labore eos tenetur qui provident
-                  blanditiis commodi magni animi at dicta dolore! Tempora, magni
-                  consequatur?
-                </p>
-              </div>
-              <div>
-                <a href="/">En savoir plus</a>
-              </div>
-            </div>
-            <img src="img/dwwm.png" alt="DWWM" />
-          </article>
-        </div>
-      </section>
-
-      <section id="competence">
-        <h2>Mes compétences</h2>
+      <section id="competence" class="container">
+        <h2>Les compétences développées</h2>
         <div class="competence-container">
           <div>
             <details>
@@ -206,10 +146,9 @@
         </div>
       </section>
 
-      <section id="projet">
+      <section id="projet" class="container">
         <div>
-          <h2>Mes projets</h2>
-          <a href="/">Voir tous les projets</a>
+          <h2>Les projets réalisés</h2>
         </div>
         <div id="projet-container">
           <div>
@@ -252,6 +191,7 @@
             <a href="/">Lire la suite</a>
           </div>
         </div>
+        <a href="/">Voir plus de projets</a>
       </section>
     </main>
 
