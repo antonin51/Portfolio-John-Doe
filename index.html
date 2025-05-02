@@ -22,6 +22,7 @@
           <li><a href="/">Contactez-moi</a></li>
         </ul>
       </nav>
+      <i class="fa-solid fa-bars burger"></i>
     </header>
 
     <main class="container">
@@ -109,91 +110,143 @@
 
       <section id="competence">
         <h2>Mes compétences</h2>
+        <div id="competence-container">
+          <div>
+            <details>
+              <summary><h3>Langage de programmation</h3></summary>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>TypeScript</li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Frameworks et bibliothèques</h3></summary>
+              <ul>
+                <li>
+                  <h4>Front-end</h4>
+                  <ul>
+                    <li>React.js</li>
+                    <li>Angular</li>
+                    <li>Vue.js</li>
+                    <li>Jquery</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Back-end</h4>
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                  </ul>
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Bases de données</h3></summary>
+              <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>SQLite</li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Outils de développement</h3></summary>
+              <ul>
+                <li>Git et GitHub</li>
+                <li>Babel</li>
+                <li>Visual Studio Code</li>
+              </ul>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary><h3>Conception Web</h3></summary>
+              <ul>
+                <li>Responsive Web Design</li>
+                <li>Connaissance des principes UX/UI</li>
+                <li>Adobe XD / Figma / Sketch</li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Services Web</h3></summary>
+              <ul>
+                <li>APIs REST</li>
+                <li>GraphQL</li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Sécurité</h3></summary>
+              <ul>
+                <li>Principes de sécurité web (OWASP)</li>
+                <li>Gestion des sessions et des cookies</li>
+                <li>Authentification et autorisation</li>
+                <li>SS/TLS</li>
+              </ul>
+            </details>
+            <details>
+              <summary><h3>Autres compétences</h3></summary>
+              <ul>
+                <li>Testing et débogage</li>
+                <li>Performance et optimisations</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <li>Accessibilité web (WCAG)</li>
+                <li>Gestion de projet et collaboration en équipe</li>
+                <li>Veille technologique et apprentissage continu</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="projet">
         <div>
-          <details>
-            <summary><h3>Langage de programmation</h3></summary>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>Python</li>
-              <li>TypeScript</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Frameworks et bibliothèques</h3></summary>
-            <ul>
-              <li>
-                <h4>Front-end</h4>
-                <ul>
-                  <li>React.js</li>
-                  <li>Angular</li>
-                  <li>Vue.js</li>
-                  <li>Jquery</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </li>
-              <li>
-                <h4>Back-end</h4>
-                <ul>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                </ul>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Bases de données</h3></summary>
-            <ul>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>SQLite</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Outils de développement</h3></summary>
-            <ul>
-              <li>Git et GitHub</li>
-              <li>Babel</li>
-              <li>Visual Studio Code</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Conception Web</h3></summary>
-            <ul>
-              <li>Responsive Web Design</li>
-              <li>Connaissance des principes UX/UI</li>
-              <li>Adobe XD / Figma / Sketch</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Services Web</h3></summary>
-            <ul>
-              <li>APIs REST</li>
-              <li>GraphQL</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Sécurité</h3></summary>
-            <ul>
-              <li>Principes de sécurité web (OWASP)</li>
-              <li>Gestion des sessions et des cookies</li>
-              <li>Authentification et autorisation</li>
-              <li>SS/TLS</li>
-            </ul>
-          </details>
-          <details>
-            <summary><h3>Autres compétences</h3></summary>
-            <ul>
-              <li>Testing et débogage</li>
-              <li>Performance et optimisations</li>
-              <li>SEO (Search Engine Optimization)</li>
-              <li>Accessibilité web (WCAG)</li>
-              <li>Gestion de projet et collaboration en équipe</li>
-              <li>Veille technologique et apprentissage continu</li>
-            </ul>
-          </details>
+          <h2>Mes projets</h2>
+          <a href="/">Voir tous les projets</a>
+        </div>
+        <div id="projet-container">
+          <div>
+            <article>
+              <img src="img/projet1.png" alt="Projet 1" />
+              <h3>Home Key - Intégration HTML & CSS</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis laudantium iure, autem omnis dolorum, expedita
+                officiis facilis soluta officia maiores nihil nisi repudiandae
+                suscipit nostrum commodi rem, repellendus explicabo eum...
+              </p>
+            </article>
+            <a href="/">Lire la suite</a>
+          </div>
+          <div>
+            <article>
+              <img src="img/projet2.png" alt="Projet 2" />
+              <h3>Vividly - Intégration Mobile First</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis laudantium iure, autem omnis dolorum, expedita
+                officiis facilis soluta officia maiores nihil nisi repudiandae
+                suscipit nostrum commodi rem, repellendus explicabo eum...
+              </p>
+            </article>
+            <a href="/">Lire la suite</a>
+          </div>
+          <div>
+            <article>
+              <img src="img/projet3.png" alt="Projet 3" />
+              <h3>Portfolio de Développeur Web</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis laudantium iure, autem omnis dolorum, expedita
+                officiis facilis soluta officia maiores nihil nisi repudiandae
+                suscipit nostrum commodi rem, repellendus explicabo eum...
+              </p>
+            </article>
+            <a href="/">Lire la suite</a>
+          </div>
         </div>
       </section>
     </main>
