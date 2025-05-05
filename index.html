@@ -19,15 +19,35 @@
       <nav>
         <ul>
           <li><a class="active" href="/">Accueil</a></li>
-          <li><a href="/">Qui suis-je ?</a></li>
-          <li><a href="/">Ma formation</a></li>
-          <li><a href="/">Mes compétences</a></li>
-          <li><a href="/">Mes Projets</a></li>
-          <li><a href="/">Contactez-nous</a></li>
+          <li><a href="#kisuije">Qui suis-je ?</a></li>
+          <li><a href="/formation.html">Ma formation</a></li>
+          <li><a href="#competence">Mes compétences</a></li>
+          <li><a href="/projets.html">Mes Projets</a></li>
+          <li>
+            <label for="modal-toggle" class="open-button">Contactez-nous</label>
+          </li>
         </ul>
       </nav>
       <i class="fa-solid fa-bars burger"></i>
     </header>
+
+    <input type="checkbox" id="modal-toggle" hidden />
+
+    <div class="modal">
+      <div class="modal-content">
+        <label for="modal-toggle" class="close-button">&times;</label>
+        <h2>Contactez-nous</h2>
+        <form>
+          <label for="nom">Votre nom :</label>
+          <input type="text" id="nom" placeholder="Votre nom" />
+          <label for="email">Votre email :</label>
+          <input type="email" id="email" placeholder="Votre email" />
+          <label for="message">Votre message :</label>
+          <textarea id="message" placeholder="Votre message"></textarea>
+          <button type="submit">Envoyer la demande</button>
+        </form>
+      </div>
+    </div>
 
     <main class="container">
       <section id="kisuije">
@@ -54,7 +74,7 @@
             soluta libero voluptate sit, maiores consequatur minus perspiciatis
             perferendis porro? Consectetur, laborum quo!
           </p>
-          <button type="button">Contactez-moi</button>
+          <a href="/">Contactez-moi</a>
         </article>
         <img src="img/moi.png" alt="John Doe" />
       </section>
@@ -215,6 +235,7 @@
           <div>
             <article>
               <img src="img/projet1.png" alt="Projet 1" />
+              <div class="text">Front-end</div>
               <h3>Home Key - Intégration HTML & CSS</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -228,6 +249,7 @@
           <div>
             <article>
               <img src="img/projet2.png" alt="Projet 2" />
+              <div class="text">Front-end</div>
               <h3>Vividly - Intégration Mobile First</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -241,6 +263,7 @@
           <div>
             <article>
               <img src="img/projet3.png" alt="Projet 3" />
+              <div class="text">Back-end</div>
               <h3>Portfolio de Développeur Web</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
