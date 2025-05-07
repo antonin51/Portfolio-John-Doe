@@ -16,6 +16,26 @@
   --red: #e7174a;
 }
 
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
 p {
   font-family: var(--opensans);
   font-size: 16px;
@@ -124,6 +144,7 @@ a {
     justify-content: space-between;
     align-items: center;
     a {
+      background-color: transparent;
       img {
         width: 180px;
       }
@@ -136,7 +157,38 @@ a {
         list-style: none;
         gap: 10px;
         li {
+          a {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--orange);
+            transition: all 0.2s ease;
+            &:hover {
+              color: var(--red);
+              background-color: transparent;
+            }
+          }
+          &:nth-child(1) a {
+            animation-delay: 0.2s;
+          }
+          &:nth-child(2) a {
+            animation-delay: 0.4s;
+          }
+          &:nth-child(3) a {
+            animation-delay: 0.6s;
+          }
+          &:nth-child(4) a {
+            animation-delay: 0.8s;
+          }
+          &:nth-child(5) a {
+            animation-delay: 1s;
+          }
           .open-button {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            animation-delay: 1.2s;
             font-family: var(--opensans);
             background: var(--orange);
             color: white;
@@ -147,22 +199,6 @@ a {
             &:hover {
               background: var(--red);
             }
-          }
-          a {
-            padding: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            color: var(--orange);
-            transition: all 0.2s ease;
-            &:hover {
-              color: var(--red);
-              background-color: var(--darblue);
-            }
-          }
-          &:nth-child(6) a {
-            padding: 5px;
-            color: var(--white);
-            background-color: var(--orange);
           }
         }
       }
@@ -177,6 +213,9 @@ a {
       display: grid;
       grid-template-columns: 57% 43%;
       article {
+        opacity: 0;
+        animation: fadeInBottom 0.6s ease-out forwards;
+        animation-delay: 1.2s;
         margin-right: 190px;
         h1 {
           margin: 20px 0;
@@ -196,6 +235,9 @@ a {
         }
       }
       img {
+        transform: scale(0%);
+        animation: img 1s ease-out forwards;
+        animation-delay: 1.2s;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -398,7 +440,23 @@ a {
         list-style: none;
         gap: 10px;
         li {
+          a {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--orange);
+            transition: all 0.2s ease;
+            &:hover {
+              color: var(--red);
+              background-color: transparent;
+            }
+          }
           .open-button {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            animation-delay: 1.2s;
             font-family: var(--opensans);
             background: var(--orange);
             color: white;
@@ -410,21 +468,20 @@ a {
               background-color: var(--red);
             }
           }
-          a {
-            padding: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            color: var(--orange);
-            transition: all 0.2s ease;
-            &:hover {
-              color: var(--red);
-              background-color: var(--darblue);
-            }
+          &:nth-child(1) a {
+            animation-delay: 0.2s;
           }
-          &:nth-child(6) a {
-            padding: 5px;
-            color: var(--white);
-            background-color: var(--orange);
+          &:nth-child(2) a {
+            animation-delay: 0.4s;
+          }
+          &:nth-child(3) a {
+            animation-delay: 0.6s;
+          }
+          &:nth-child(4) a {
+            animation-delay: 0.8s;
+          }
+          &:nth-child(5) a {
+            animation-delay: 1s;
           }
         }
       }
@@ -435,6 +492,10 @@ a {
   }
   main {
     #alacarte {
+      opacity: 0;
+      animation: fadeInBottom 0.6s ease-out forwards;
+      animation-delay: 0.6s;
+      animation-duration: 1s;
       background-color: #e7174a;
       padding: 200px 0;
       h1 {
@@ -578,7 +639,23 @@ a {
         list-style: none;
         gap: 10px;
         li {
+          a {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--orange);
+            transition: all 0.2s ease;
+            &:hover {
+              color: var(--red);
+              background-color: transparent;
+            }
+          }
           .open-button {
+            opacity: 0;
+            animation: fadeInBottom 0.6s ease-out forwards;
+            animation-delay: 1.2s;
             font-family: var(--opensans);
             background: var(--orange);
             color: white;
@@ -590,21 +667,20 @@ a {
               background: var(--red);
             }
           }
-          a {
-            padding: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            color: var(--orange);
-            transition: all 0.2s ease;
-            &:hover {
-              color: var(--red);
-              background-color: var(--darblue);
-            }
+          &:nth-child(1) a {
+            animation-delay: 0.2s;
           }
-          &:nth-child(6) a {
-            padding: 5px;
-            color: var(--white);
-            background-color: var(--orange);
+          &:nth-child(2) a {
+            animation-delay: 0.4s;
+          }
+          &:nth-child(3) a {
+            animation-delay: 0.6s;
+          }
+          &:nth-child(4) a {
+            animation-delay: 0.8s;
+          }
+          &:nth-child(5) a {
+            animation-delay: 1s;
           }
         }
       }
@@ -615,6 +691,10 @@ a {
   }
   main {
     #mesprojets {
+      opacity: 0;
+      animation: fadeInBottom 0.6s ease-out forwards;
+      animation-delay: 0.6s;
+      animation-duration: 1s;
       background-color: #e7174a;
       padding: 200px 0;
       h1 {
